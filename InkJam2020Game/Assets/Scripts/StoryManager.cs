@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Linq;
 using Ink.Runtime;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -17,6 +20,8 @@ public class StoryManager : MonoBehaviour
     private ChoiceButtons storyChoiceButtons;
     [SerializeField]
     private TextAsset inkFile;
+    private List<string> currentTags;
+    private Dictionary<string, UnityEvent<string>> tagHandlers;
 
     public void SelectChoice(int index)
     {
@@ -25,9 +30,31 @@ public class StoryManager : MonoBehaviour
         ContinueStory();
     }
 
+    public UnityAction<string> AddTagHandler(string tagType, UnityAction<string> handler)
+    {
+        if (!tagHandlers.ContainsKey(tagType))
+        {
+            tagHandlers.Add(tagType, new UnityEvent<string>());
+        }
+        
+        tagHandlers[tagType].AddListener(handler);
+
+        return handler;
+    }
+    
+    public void RemoveTagHandler(string tagType, UnityAction<string> handler)
+    {
+        if (tagHandlers.ContainsKey(tagType))
+        {
+            tagHandlers[tagType].RemoveListener(handler);
+        }
+    }
+
     private void Awake()
     {
         inkStory = new Story(inkFile.text);
+        currentTags = new List<string>();
+        tagHandlers = new Dictionary<string, UnityEvent<string>>();
     }
 
     private void Start()
@@ -43,23 +70,33 @@ public class StoryManager : MonoBehaviour
         storyTextDisplay.ClearText();
         storyChoiceButtons.ClearChoices();
         
+        currentTags.Clear();
+        
         // Ensure that there is text to get
         if (inkStory.canContinue)
         {
             // Get the next line
-            string nextLine;
+            string nextLine = "";
 
             if (shouldContinueMaximally)
             {
-                nextLine = inkStory.ContinueMaximally();
+                while (inkStory.canContinue)
+                {
+                    nextLine += inkStory.Continue();
+                    currentTags.AddRange(inkStory.currentTags);
+                }
             }
             else
             {
                 nextLine = inkStory.Continue();
+                currentTags.AddRange(inkStory.currentTags);
             }
 
             // Display text
             storyTextDisplay.DisplayText(nextLine);
+            
+            // Handle Tags
+            InvokeTags();
         }
         else if (inkStory.currentChoices.Count > 0)
         {
@@ -77,6 +114,21 @@ public class StoryManager : MonoBehaviour
         if (inkStory.currentChoices.Count > 0)
         {
             storyChoiceButtons.DisplayChoices(inkStory.currentChoices, this);
+        }
+    }
+
+    private void InvokeTags()
+    {
+        foreach (var tag in currentTags)
+        {
+            // Get the type and the content, making sure to trim whitespace
+            var tagType = tag.Split(':')[0].Trim();
+            var tagContent = tag.Split(':')[1].Trim();
+
+            if (tagHandlers.ContainsKey(tagType))
+            {
+                tagHandlers[tagType].Invoke(tagContent);
+            }
         }
     }
 }
