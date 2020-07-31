@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -13,15 +14,15 @@ public class TextDisplay : MonoBehaviour
     public UnityEvent textDisplayFinished;
     
     // Private properties
-    private string displayString;
-    private Text myText;
+    private TextMeshProUGUI myText;
     private Coroutine displayTextCoroutine;
     
     // Public functions
     public void DisplayText(string textToDisplay)
     {
         displayingText = true;
-        displayString = textToDisplay;
+        myText.text = textToDisplay;
+        myText.maxVisibleCharacters = 0;
         displayTextCoroutine = StartCoroutine(DisplayTextCoroutine());
     }
 
@@ -33,14 +34,14 @@ public class TextDisplay : MonoBehaviour
     public void CompleteText()
     {
         StopCoroutine(displayTextCoroutine);
-        myText.text = displayString;
+        myText.maxVisibleCharacters = myText.text.Length;
         DisplayFinished();
     }
     
     // Private functions
     private void Awake()
     {
-        myText = GetComponent<Text>();
+        myText = GetComponent<TextMeshProUGUI>();
         textDisplayFinished = new UnityEvent();
     }
 
@@ -54,9 +55,9 @@ public class TextDisplay : MonoBehaviour
 
     private IEnumerator DisplayTextCoroutine()
     {
-        foreach (var c in displayString)
+        foreach (var c in myText.text)
         {
-            myText.text += c;
+            myText.maxVisibleCharacters++;
             yield return new WaitForSeconds(0.05f);
         }
 
