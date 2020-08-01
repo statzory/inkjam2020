@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{5cf93a51-c7ee-3575-d788-a9c7ed8dbe54}</ProjectGuid>
+    <ProjectGuid>{5ec8cf55-6de1-a79b-c71e-b8907decf8af}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -100,92 +100,94 @@
      <Compile Include="Assets\Wwise\Editor\WwiseWindows\AkWwiseXMLBuilder.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkEventInspector.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseMenu\Mac\AkWwiseMenu_Mac.cs" />
+     <Compile Include="Assets\SerializableDictionary\Editor\SerializableDictionaryPropertyDrawer.cs" />
+     <Compile Include="Assets\SerializableDictionary\Example\Editor\UserSerializableDictionaryPropertyDrawers.cs" />
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Runtime">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Path.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.Path.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Triangle.Runtime">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.Animation.Triangle.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="PsdPlugin">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/PsdPlugin.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Psdimporter.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.Psdimporter.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEngineBridge.001">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Runtime">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.SpriteShape.Runtime">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.PixelPerfect">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Animation.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Common.Editor">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InternalAPIEditorBridge.001">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.1.0f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -386,7 +388,7 @@
  <HintPath>/Applications/Unity/Hub/Editor/2020.1.0f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game_WwiseIntegrationTemp/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>/Applications/Unity/Hub/Editor/2020.1.0f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -736,19 +738,19 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{0703235a-20aa-58cc-d877-d149ede4700b}</Project>
+      <Project>{cec2e02e-e166-0ac2-af51-9635475351c2}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{2fc01dea-4619-2dc6-e889-f67bd201e7e0}</Project>
+      <Project>{67b18b8a-c0c5-1cd0-01ed-b229a61c53ee}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj">
-      <Project>{068a2e25-a735-b161-898d-e40041887c62}</Project>
+      <Project>{5937b428-3fde-6574-534d-8a6dfe2614bf}</Project>
       <Name>Assembly-CSharp-Editor-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="Ink-Libraries.csproj">
-      <Project>{aba06a45-ff78-9d06-e10d-d4096d159983}</Project>
+      <Project>{6b755c42-5824-a14c-0542-41eda419efe4}</Project>
       <Name>Ink-Libraries</Name>
     </ProjectReference>
   </ItemGroup>
