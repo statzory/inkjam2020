@@ -65,7 +65,7 @@ Currently you have ₽{totalRubels}, {totalBots()} total bots, {totalDudes()} du
 
 == Beginning ==
 # background: beginning
-You have inherited a farm from your uncle {~Jim|John|James|Vladimir}.
+You have inherited a farm from your uncle  {~Jim|John|James|Vladimir}.
 Gazing across the frozen wasteland, you doubt anything will grow here. 
 Luckily, you have decent Internet connectivity and have been told there's a growing industry for social media consultants in the area...
 * [Go to your farm]

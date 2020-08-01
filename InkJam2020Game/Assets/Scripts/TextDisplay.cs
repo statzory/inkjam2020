@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Xml.Serialization;
+using System.Globalization;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -20,9 +21,11 @@ public class TextDisplay : MonoBehaviour
     // Public functions
     public void DisplayText(string textToDisplay)
     {
-        displayingText = true;
         myText.text = textToDisplay;
         myText.maxVisibleCharacters = 0;
+
+        // We now start displaying the text
+        displayingText = true;
         displayTextCoroutine = StartCoroutine(DisplayTextCoroutine());
     }
 
