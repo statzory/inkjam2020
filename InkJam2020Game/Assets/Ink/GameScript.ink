@@ -58,7 +58,8 @@ Where should we go first?</color>
 * [His apartment]
     ->gregs_apartment
 * ->
-    ->END
+    # scene:mainmenu
+    ->END 
 
 === the_house_party ===
 # background:party
@@ -70,8 +71,15 @@ Party!
 === gregs_apartment ===
 # background:apartment
 # demon:hide
-I was lying on his bed.
-Greg was in the living room.
+You are lying on his bed.
+Greg was in the living room. Sounds of virtual shooting were coming through the doorway.
+Being alone is...
+* Peaceful
+* Frustrating
+* Existentially terrifying
+- Then again, you did ask to be left alone.
+The doorway opens a bit, and Greg pokes his head in.
+<color=yellow> Hey, can I come in? I wanted to see if you're feeling better.</color>
 ~ memories_visited++
 ->the_summoning.choice
 

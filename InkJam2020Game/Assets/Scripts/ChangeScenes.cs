@@ -9,25 +9,25 @@ public class ChangeScenes : MonoBehaviour
   public float FadeTime = 1.0f;
   public Canvas firstCanvas;
 
-  string dest;
-  Canvas visibleCanvas;
-  Coroutine fadeRoutine;
+  private string dest;
+  private Canvas visibleCanvas;
+  private Coroutine fadeRoutine;
+  private StoryManager storyManager;
 
   private void Awake()
   {
     visibleCanvas = firstCanvas;
+    storyManager = FindObjectOfType<StoryManager>();
   }
 
   // Use this for initialization
-	void Start ()
+	private void Start ()
   {
-	
-	}
-	
-	// Update is called once per frame
-	void Update ()
-  {
-	}
+    if (storyManager != null)
+    {
+      storyManager.AddTagHandler("scene", SwapScene);
+    }
+  }
 
   public void SwapScene(string scene)
   {
