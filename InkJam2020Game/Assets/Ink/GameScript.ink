@@ -39,7 +39,7 @@ You say the words. You renounce God. You call out his name.
 What would you with that kind of power?</color>
 * [I could understand everthing! I could do what science could not]
 * [So much is broken out there. If I had power, I could fix it]
-* [I will live and go on adventures! I could have a real conversation with a stranger!]
+* [I will live and go on adventures! I could have... real conversations with strangers!]
 - <color=red>That sounds wonderful, and I would be thrilled to aid you in your achievement.
 Of course, we must discuss the matter of price, but that is what the negotiation is for.</color>
 * [Was my offering not enough?]

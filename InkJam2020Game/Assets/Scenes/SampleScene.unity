@@ -319,6 +319,14 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7899400759305259972, guid: 639699591210a49b29f196c4311926f6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899400759305259972, guid: 639699591210a49b29f196c4311926f6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 639699591210a49b29f196c4311926f6, type: 3}
 --- !u!224 &299875551 stripped
@@ -502,6 +510,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1839600286}
     m_Modifications:
+    - target: {fileID: 7899400758846499591, guid: 639699591210a49b29f196c4311926f6, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7899400758846499608, guid: 639699591210a49b29f196c4311926f6, type: 3}
       propertyPath: m_Name
       value: Button
@@ -695,6 +707,14 @@ PrefabInstance:
     - target: {fileID: 7899400758846499609, guid: 639699591210a49b29f196c4311926f6, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899400759305259972, guid: 639699591210a49b29f196c4311926f6, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899400759305259972, guid: 639699591210a49b29f196c4311926f6, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 639699591210a49b29f196c4311926f6, type: 3}
@@ -984,7 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1045,7 +1065,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 500}
+  m_SizeDelta: {x: 1200, y: 500}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1949551582
 MonoBehaviour:
