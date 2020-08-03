@@ -261,6 +261,7 @@
      <Compile Include="Assets\Wwise\Deployment\API\Handwritten\WAAPI\AkWaapiClient_PINVOKE.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Windows\AkPlatformInitSettings_Windows.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkObjectInfo.cs" />
+     <Compile Include="Assets\Scripts\ChangeScenes.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\WwiseSettings.xml" />
