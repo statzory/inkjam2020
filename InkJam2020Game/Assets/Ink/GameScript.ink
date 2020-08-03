@@ -26,8 +26,8 @@ Is the month right?
     It tells you the hour is right.
 - Then the summoning can begin.
 You say the words. You renounce God. You call out his name.
-* Mephistopheles
-- He appears before you. In the flesh. In fur. In smoke.
+* Mephistopheles #background:study_demonic
+- He appears before you. In the flesh. In fur. In smoke. # demon:show
 <color=red>Who calls me?</color>
 * [A humble conjurer]
     <color=red>So you can show reverence? Good!</color>
@@ -62,12 +62,14 @@ Where should we go first?</color>
 
 === the_house_party ===
 # background:party
+# demon:hide
 Party!
 ~ memories_visited++
 ->the_summoning.choice
 
 === gregs_apartment ===
 # background:apartment
+# demon:hide
 I was lying on his bed.
 Greg was in the living room.
 ~ memories_visited++
@@ -75,6 +77,7 @@ Greg was in the living room.
 
 === alone_in_study ===
 # background:study
+# demon:hide
 Study!
 ~ memories_visited++
 ->the_summoning.choice

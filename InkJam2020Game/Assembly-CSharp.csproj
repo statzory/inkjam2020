@@ -94,6 +94,7 @@
      <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\WwiseObjects\WwiseSwitchGroupReference.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkFloorPlane.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\AkLogger.cs" />
+     <Compile Include="Assets\Scripts\ChangeScenes.cs" />
      <Compile Include="Assets\Wwise\Deployment\Components\AkEventPlayable.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\WwiseTypes\AkWwiseAuxBus.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkDeviceDescription.cs" />
@@ -261,7 +262,7 @@
      <Compile Include="Assets\Wwise\Deployment\API\Handwritten\WAAPI\AkWaapiClient_PINVOKE.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Windows\AkPlatformInitSettings_Windows.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkObjectInfo.cs" />
-     <Compile Include="Assets\Scripts\ChangeScenes.cs" />
+     <Compile Include="Assets\Scripts\Demon.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\WwiseSettings.xml" />
