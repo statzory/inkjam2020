@@ -1,7 +1,11 @@
+VAR memories_visited = 0
 VAR has_compassion = true
 VAR has_curiosity = true
 
 -> the_summoning
+
+=== function came_from(-> x) ===
+	~ return TURNS_SINCE(x) == 0
 
 === the_summoning ===
 # background:study
@@ -31,8 +35,8 @@ You say the words. You renounce God. You call out his name.
     <color=red>If you were wise you would not be here.</color>
 * [Dreadful shape!]
     <color=red>How rude.</color>
-- <color=red>You are here because you require my services. My knowledge, my magic, and my occasional intervention.</color>
-What would you with that kind of power?
+- <color=red>You are here because you require my services. My knowledge, my magic, and my occasional intervention.
+What would you with that kind of power?</color>
 * [I could understand everthing! I could do what science could not]
 * [So much is broken out there. If I had power, I could fix it]
 * [I will live and go on adventures! I could have a real conversation with a stranger!]
@@ -44,26 +48,34 @@ Of course, we must discuss the matter of price, but that is what the negotiation
 * [Of course, let us begin]
 - <color=red>Luckily for you, I am generous. I will not demand your entire soul. A few choice cuts will do.
 For that, I will need to examine you. Appraise the merchandise.
-Tell me, where did you first come upon the notion of inviting me here?</color>
-* [A party, it was sometime around easter]
+Let me see..
+Where should we go first?</color>
+- (choice)
+* [The party]
     ->the_house_party
-* [Here in this study]
+* [The study]
     ->alone_in_study
-* [My boyfriend's apartment]
+* [His apartment]
     ->gregs_apartment
+* ->
+    ->END
 
 === the_house_party ===
 # background:party
 Party!
-->END
+~ memories_visited++
+->the_summoning.choice
 
 === gregs_apartment ===
 # background:apartment
-Boyfriend!
-->END
+I was lying on his bed.
+Greg was in the living room.
+~ memories_visited++
+->the_summoning.choice
 
 === alone_in_study ===
 # background:study
 Study!
-->END
+~ memories_visited++
+->the_summoning.choice
 

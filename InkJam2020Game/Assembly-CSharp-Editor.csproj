@@ -51,6 +51,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkRoomInspector.cs" />
+     <Compile Include="Assets\SerializableDictionary\Editor\SerializableDictionaryPropertyDrawer.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseTypes\EventDrawer.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseTypes\StateDrawer.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkPluginActivator.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkRTPCPlayableInspector.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseTypes\AcousticTextureDrawer.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkWwisePostImportCallbackSetup.cs" />
+     <Compile Include="Assets\SerializableDictionary\Example\Editor\UserSerializableDictionaryPropertyDrawers.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseSetupWizard\AkUnitySettingsParser.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseWindows\AkWwiseProjectInfo.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkGameObjListenerListDrawer.cs" />
@@ -100,8 +102,6 @@
      <Compile Include="Assets\Wwise\Editor\WwiseWindows\AkWwiseXMLBuilder.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseComponents\AkEventInspector.cs" />
      <Compile Include="Assets\Wwise\Editor\WwiseMenu\Mac\AkWwiseMenu_Mac.cs" />
-     <Compile Include="Assets\SerializableDictionary\Editor\SerializableDictionaryPropertyDrawer.cs" />
-     <Compile Include="Assets\SerializableDictionary\Example\Editor\UserSerializableDictionaryPropertyDrawers.cs" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>/Users/stavhinenzon/Side Projects/inkjam2020/InkJam2020Game/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>

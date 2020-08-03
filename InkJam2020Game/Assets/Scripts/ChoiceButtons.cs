@@ -9,14 +9,17 @@ public class ChoiceButtons : MonoBehaviour
 {
     [SerializeField]
     private Button buttonPrefab;
+    private Button[] buttons;
     
     public void DisplayChoices(List<Choice> choices, StoryManager storyManager)
     {
-        foreach (var choice in choices)
+        for (var i = 0; i < buttons.Length; i++)
         {
-            var choiceButton = Instantiate(buttonPrefab, transform, false);
-            choiceButton.transform.Translate(Vector3.zero);
-
+            var choiceButton = buttons[i];
+            var choice = choices[i];
+            
+            choiceButton.gameObject.SetActive(true);
+            
             var choiceText = choiceButton.GetComponentInChildren<Text>();
             choiceText.text = choice.text;
 
@@ -26,9 +29,15 @@ public class ChoiceButtons : MonoBehaviour
 
     public void ClearChoices()
     {
-        foreach (var choice in GetComponentsInChildren<Button>())
+        foreach (var choice in buttons)
         {
-            Destroy(choice.gameObject);
+            choice.onClick.RemoveAllListeners();
+            choice.gameObject.SetActive(false);
         }
+    }
+
+    private void Awake()
+    {
+        buttons = GetComponentsInChildren<Button>();
     }
 }

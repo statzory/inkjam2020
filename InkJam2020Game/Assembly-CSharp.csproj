@@ -53,6 +53,7 @@
      <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\WwiseTypes\AkWwiseTypeMigration.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkImageSourceSettings.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\WwiseObjects\WwiseAcousticTextureReference.cs" />
+     <Compile Include="Assets\SerializableDictionary\Example\UserSerializableDictionaries.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkRoomParams.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkDiffractionFlags.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAuxSendValue.cs" />
@@ -142,6 +143,7 @@
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkChannelConfigType.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkRamp.cs" />
      <Compile Include="Assets\Wwise\Deployment\Components\AkRoomAwareObject.cs" />
+     <Compile Include="Assets\SerializableDictionary\SerializableDictionary.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\Timeline\AkTimelineEventPlayable.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkDeviceSettings.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkTransform.cs" />
@@ -153,6 +155,7 @@
      <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerBase.cs" />
      <Compile Include="Assets\Wwise\Deployment\Components\AkTriggerMouseUp.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkAcousticSurface.cs" />
+     <Compile Include="Assets\SerializableDictionary\Example\SerializableDictionaryExample.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Handwritten\Common\WwiseTypes\AkWwiseCallbackFlags.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkGroupType.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkCallbackSerializer.cs" />
@@ -258,9 +261,6 @@
      <Compile Include="Assets\Wwise\Deployment\API\Handwritten\WAAPI\AkWaapiClient_PINVOKE.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Windows\AkPlatformInitSettings_Windows.cs" />
      <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AkObjectInfo.cs" />
-     <Compile Include="Assets\SerializableDictionary\Example\UserSerializableDictionaries.cs" />
-     <Compile Include="Assets\SerializableDictionary\SerializableDictionary.cs" />
-     <Compile Include="Assets\SerializableDictionary\Example\SerializableDictionaryExample.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\WwiseSettings.xml" />
